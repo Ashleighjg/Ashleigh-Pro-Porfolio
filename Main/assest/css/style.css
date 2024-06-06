@@ -1,0 +1,88 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+header {
+    text-align: right;
+
+}
+
+
+main {
+    text-align: center;
+
+}
+
+
+footer {
+    color: lightgray;
+    background-color: purple;
+    text-align: center;
+   
+}
+
+
+.name {
+    color: black;
+    background-color: white;
+    text-align: center;
+
+}
+
+.picture { 
+    height: 200px;
+    width: 200px;
+    display: inline;
+    align-self: center;
+    top: 200px;
+    
+}
+
+.titleheadings {
+   
+    background-color: darkgoldenrod;
+    display: block;
+    text-align: center;
+
+}
+
+
+.about {
+    background-color: white;
+    display: block;
+    text-align: center;
+
+}
+
+
+.work {
+    background-color: violet;
+    display: block;
+    text-align: center;
+
+}
+
+.contact {
+    background-color: purple;
+    display: block;
+    text-align: center;
+
+}
+
+
+label {
+    display: block;
+
+  }
+
+
+#nameinput {display: inline;}
+
+#emailinput {display: inline;}
+
+form {
+    display: inline;
+}
+  
