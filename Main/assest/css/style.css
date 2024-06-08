@@ -1,76 +1,317 @@
-*{
-    font-family:Georgia, 'Times New Roman', Times, serif;
 
+:root {
+    --purple: #420772;
+    --Teal: #088e97;
+    --Tan: #a5aab1;
+    --gold: #d3af0d;
+  }
+  
+    /* set content highlight color and background */
+::selection {
+    background-color: var(--Teal);
+    color: var(--Purple);
 }
 
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+  
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--Tan);
+    background-color: var(--purple);
+    margin: 0;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: var(--gold);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+  }
+  
 
 header {
     text-align: right;
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 50px;
 
 }
+
+  
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: var(--Teal);
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+    border-radius: 50px;
+  }
+
 
 
 main {
+    width: 96%;
+    margin: 2rem auto; 
     text-align: center;
 
 }
+
+
 
 
 footer {
-    color: lightgray;
-    background-color: black;
+    
+    color: black;
+    background-color: var(--Teal);
     text-align: center;
-   
+    position: relative;
+    padding: 30px;
+    clear: both;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font-size: 30px;
 }
+   
+
+   
+
+  
 
 
 .name {
-    color: black;
-    background-color: white;
-    text-align: center;
-
-}
+    padding: 1rem 1.2rem;
+    font-size: 10rem;
+    text-align: left
+    
+  }
+  
 
 .picture { 
-    height: 200px;
-    width: 200px;
-    display: inline;
-    align-self: center;
-    top: 200px;
+
+    max-width: 150%;
+    height: auto;
+    flex: 1 0 200px;
+    border: 10px solid var(--Teal);
+    position: relative;
+    box-shadow: 10px 10px 5px black;
+    
     
 }
 
-.titleheadings {
+.projectpic {
    
-    background-color: darkgoldenrod;
-    display: block;
-    text-align: center;
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    border-style: solid;
+    border-width: 1px; 
+    flex: 1 0 200px;
 
+}
+
+.titleheadings {
+    color: var(--Teal);
+    display: inline;
+    text-align: right;
+    font-size: 10rem;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 50px;
+   
 }
 
 
 .about {
-    background-color: white;
+   
     display: block;
     text-align: center;
-
+    box-shadow: 10px 10px 5px black;
+    border-radius: 50px;
 }
-
 
 .work {
-    background-color: violet;
-    display: block;
-    text-align: center;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 50px;
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--Teal);
+    color: var(--Gold);
+    border: 2px solid var(--Tan);
+    border-radius: 8px;
 
 }
+
 
 .contact {
-    background-color: purple;
-    display: block;
+    
+    display: inline-block;
+    align-items: center;
     text-align: center;
+    position: relative;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 50px;
 
 }
 
+.project {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 25%;
+    box-shadow: 10px 10px 5px black;
+   
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--gold);
+    /* outline is like border, but on the outside of the box instead of inside */
+    outline: 2px solid var(--Tan);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+    
+    .project-card:hover .project-header {
+    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+.project-card pre {
+    /* set styles to make it so code wraps in <pre> instead of overflowing */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .project-header {
+    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--Teal);
+    color: var(--Gold);
+    border: 2px solid var(--Tan);
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  .project-p {
+    text-align: center;
+  }
+  
+  .project-img {
+    width: 100%;
+  }
+  
+   
+
+    /* Projects are stacked on top of each other at 768px or smaller */
+ @media screen and (max-width: 768px) {
+    .project {
+        flex: 0 0 50%;
+        max-width: 100%;
+        }
+}     
+
+.project:last-child {
+    flex-grow: 1;
+  }
+
+    /* media query for larger screens */
+@media screen and (max-width: 992px) {
+        .project,nav {
+        width: 75%;
+      
+        }
+    }  
 
 label {
     display: block;
