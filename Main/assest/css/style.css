@@ -19,11 +19,13 @@ html {
   
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     color: var(--Tan);
-    background-color: var(--purple);
+    font-style: oblique;
+    font-weight: bolder;
     margin: 0;
+    background-color: var(--purple);
   
 }
 
@@ -33,27 +35,28 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.625rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   color: var(--gold);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 3;
 }
 
 h1 {
   /* 4rem = 40px (4 * 10px) */
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 6rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 h5 {
@@ -61,7 +64,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 p {
@@ -71,10 +74,11 @@ p {
 
 header {
     text-align: right;
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
     padding: 2.5rem;
     display: flex;
+    Background: linear-gradient(0.25turn, #088e97, #420772);
 }
 
 header nav {
@@ -82,17 +86,18 @@ header nav {
     margin-right: 20px;
     float: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
     box-shadow: 10px 10px 5px black;
     border-radius: 50px;
+    border: 3px solid black;
 
 }
 
   
 header nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 10px;
     overflow: hidden;
 
@@ -107,7 +112,7 @@ header nav ul li {
 
 li a {
     display: block;
-    color: var(--Teal);
+    color: var(--gold);
     text-align: center;
     padding: 20px 15px;
     text-decoration: none;
@@ -124,7 +129,11 @@ main {
     width: 96%;
     margin: 2rem auto; 
     text-align: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+ 
 }
 
 
@@ -133,13 +142,14 @@ main {
 footer {
     
     color: black;
-    background-color: var(--Teal);
+    Background: linear-gradient(0.25turn, #088e97, #420772);
     text-align: center;
     position: relative;
     padding: 30px;
     clear: both;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
     font-size: 30px;
+    align-items: center;
 }
    
 
@@ -165,7 +175,6 @@ footer {
     position: relative;
     box-shadow: 10px 10px 5px black;
     
-    
 }
 
 .projectpic {
@@ -179,40 +188,39 @@ footer {
 
 }
 
-.titleheadings {
+aside {  
     color: var(--Teal);
-    display: inline;
     text-align: right;
-    font-size: 10rem;
-    box-shadow: 10px 10px 5px black;
-    border-radius: 50px;
-   
+    font-size: 7rem;
+    width: 25%;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+    float: right;
+    font-style: italic;
+    order:2;
+  
 }
 
 
-.about {
-   
-    display: block;
-    text-align: center;
-    box-shadow: 10px 10px 5px black;
-    border-radius: 50px;
+#skills{
+
 }
 
-.work {
+#work {
     box-shadow: 10px 10px 5px black;
     border-radius: 50px;
     position: relative;
-    margin: -4rem 0 1.5rem 0;
+    margin: 0rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
-    background-color: var(--Teal);
     color: var(--Gold);
     border: 2px solid var(--Tan);
-    border-radius: 8px;
+    
 
 }
 
 
-.contact {
+#contact {
     
     display: inline-block;
     align-items: center;
@@ -234,7 +242,10 @@ footer {
     padding: 10px;
     float: left;
     width: 25%;
+    margin: 5rem;
+    background-color: var(--Teal);
     box-shadow: 10px 10px 5px black;
+   
    
   }
   
@@ -249,16 +260,14 @@ footer {
     outline: 2px solid var(--Tan);
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
+    background-color: var(--Teal);
 
   }
 
-  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
     
-    .project-card:hover .project-header {
-    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
-}
+  
 
-.project-card pre {
+  .project-card pre {
     /* set styles to make it so code wraps in <pre> instead of overflowing */
     white-space: pre-wrap;
     overflow: auto;
@@ -275,7 +284,7 @@ footer {
     position: relative;
     margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
-    background-color: var(--Teal);
+    background-color: black;
     color: var(--Gold);
     border: 2px solid var(--Tan);
     border-radius: 8px;
@@ -290,8 +299,17 @@ footer {
   .project-img {
     width: 100%;
   }
-  
-   
+ 
+  .project-card:hover,
+  .project-card:hover .project-header {
+    box-shadow: inset 0px 0px 15px white, 0 0 30px white;
+}
+
+/* first project larger than the rest */
+  .project1 first-child {
+    flex-grow: 1;
+    
+  }
 
     /* Projects are stacked on top of each other at 768px or smaller */
  @media screen and (max-width: 768px) {
@@ -301,9 +319,7 @@ footer {
         }
 }     
 
-.project:last-child {
-    flex-grow: 1;
-  }
+
 
     /* media query for larger screens */
 @media screen and (max-width: 992px) {
@@ -313,17 +329,6 @@ footer {
         }
     }  
 
-label {
-    display: block;
-
-  }
 
 
-#nameinput {display: inline;}
-
-#emailinput {display: inline;}
-
-form {
-    display: inline;
-}
   
