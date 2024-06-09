@@ -215,6 +215,7 @@ aside {
     padding: 0.5rem 1rem;
     color: var(--Gold);
     border: 2px solid var(--Tan);
+    Background: linear-gradient(0.25turn, #088e97, #420772);
     
 
 }
