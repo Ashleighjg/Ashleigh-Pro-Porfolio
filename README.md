@@ -19,16 +19,16 @@ N/A
 
 
 
-![image of portfolio](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\portfolioscreenshot.JPG)
+![screenshot of portfolio](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\portfolioscreenshot.JPG)
 
 This website can be used by employers to learn more about me via the about me section
 
- ![image of about me section](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\aboutme.JPG)
+ ![screenshot of about me section](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\aboutme.JPG)
 
    
 Samples of my work can also be accessed via my work section that has displayed my best projects as of today.
 
- ![image of work section](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\work.JPG)
+ ![screenshot of work section](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\work.JPG)
  
 
 
