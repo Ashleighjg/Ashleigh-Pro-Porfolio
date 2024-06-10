@@ -161,6 +161,7 @@ aside {
   font-size: 6rem;
   width: 25%;
   padding-left: 20px;
+  padding-bottom: 800px;
   margin-left: 20px;
   margin-top: 100px;
   float: right;
@@ -224,7 +225,6 @@ aside {
   flex: 1 0 100%;
   padding: 1.5rem;
   /* when the screen resizes, make it so our columns don't jump in size */
- 
   margin-bottom: 1.5rem;
   border-style: solid;
   border-width: 1px;
@@ -269,9 +269,7 @@ aside {
   text-align: center;
 }
 
-.project-img {
-  width: 100%;
-}
+
 
 .project-card:hover,
 .project-card:hover .project-header {
@@ -305,7 +303,7 @@ aside {
 
   /* media query for larger screens */
   @media screen and (max-width: 992px) {
-    .project, nav{
+    .project{
       width: 50%;
     
       }
@@ -331,10 +329,14 @@ aside {
 
  /* Projects are stacked on top of each other at 576px or smaller */
  @media screen and (max-width: 576px) {
-  .project, {
+  .project {
     float: none;
     width: 100%;
       }
+
+  .project1 {
+    width: 125%;
+  }    
 }     
 
 
