@@ -241,9 +241,9 @@ aside {
   justify-content: flex-start;
   min-height: 100%;
   padding: 2rem;
-  color: var(--gold);
+  color: white;
   /* outline is like border, but on the outside of the box instead of inside */
-  outline: 2px solid var(--Tan);
+  outline: 2px solid var(--gold);
   outline-offset: -2px;
   transition: all 0.5s ease-in-out;
   background-color: var(--Teal);
@@ -282,7 +282,7 @@ aside {
   position: relative;
   margin: 0rem 0 1.5rem 0;
   padding: 0.5rem 1rem;
-  color: var(--Gold);
+  color: var(--purple);
   border: 2px solid var(--Tan);
   Background: linear-gradient(0.25turn, #088e97, #420772);
   
