@@ -19,7 +19,7 @@ html {
 
 body{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: var(--Tan);
   font-style: oblique;
@@ -39,16 +39,16 @@ margin-bottom: 2rem;
 margin-top: 2rem;
 color: var(--gold);
 font-weight: 700;
-line-height: 3;
+line-height: 2;
 }
 
 h1 {
 /* 4rem = 40px (4 * 10px) */
-font-size: 8rem;
+font-size: 6rem;
 }
 
 h2 {
-font-size: 6rem;
+font-size: 5rem;
 }
 
 h3 {
@@ -84,7 +84,7 @@ header {
 header nav {
   padding-top: 15px;
   margin-right: 20px;
-  float: right;
+  float: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
   position: relative;
@@ -155,13 +155,26 @@ footer {
 
  
 
+aside {  
+  color: var(--Teal);
+  text-align: right;
+  font-size: 6rem;
+  width: 25%;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+  float: right;
+  font-style: italic;
+  order:2;
+
+}
 
 
 
 .name {
   padding: 1rem 1.2rem;
   font-size: 10rem;
-  text-align: left
+
   
 }
 
@@ -188,49 +201,7 @@ footer {
 
 }
 
-aside {  
-  color: var(--Teal);
-  text-align: right;
-  font-size: 7rem;
-  width: 25%;
-  padding-left: 20px;
-  margin-left: 20px;
-  margin-top: 100px;
-  float: right;
-  font-style: italic;
-  order:2;
 
-}
-
-
-#skills{
-
-}
-
-#work {
-  box-shadow: 10px 10px 5px black;
-  border-radius: 50px;
-  position: relative;
-  margin: 0rem 0 1.5rem 0;
-  padding: 0.5rem 1rem;
-  color: var(--Gold);
-  border: 2px solid var(--Tan);
-  Background: linear-gradient(0.25turn, #088e97, #420772);
-  
-
-}
-
-
-#contact {
-  
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  box-shadow: 10px 10px 5px black;
-  border-radius: 50px;
-
-}
 
 .project {
   flex: 1 0 100%;
@@ -246,8 +217,22 @@ aside {
   margin: 5rem;
   background-color: var(--Teal);
   box-shadow: 10px 10px 5px black;
+
+}
+
+.project1 {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
  
- 
+  margin-bottom: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  margin: 5rem;
+  background-color: var(--Teal);
+  box-shadow: 10px 10px 5px black;
+
 }
 
 .project-card {
@@ -265,20 +250,7 @@ aside {
 
 }
 
-  
 
-
-.project-card pre {
-  /* set styles to make it so code wraps in <pre> instead of overflowing */
-  white-space: pre-wrap;
-  overflow: auto;
-  tab-size: 4;
-  padding: 1.2rem 1rem;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-
-}
 
 .project-header {
   /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
@@ -306,29 +278,66 @@ aside {
   box-shadow: inset 0px 0px 15px white, 0 0 30px white;
 }
 
+#work {
+  box-shadow: 10px 10px 5px black;
+  border-radius: 50px;
+  position: relative;
+  margin: 0rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--Gold);
+  border: 2px solid var(--Tan);
+  Background: linear-gradient(0.25turn, #088e97, #420772);
+  
+
+}
+
+
+#contact {
+  
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 50px;
+
+}
+
+  /* media query for larger screens */
+  @media screen and (max-width: 992px) {
+    .project, nav{
+      width: 50%;
+    
+      }
+    
+
+}  
+
+
+
 /* first project larger than the rest */
 .project1 first-child {
   flex-grow: 1;
   
 }
 
-  /* Projects are stacked on top of each other at 768px or smaller */
+
+  
 @media screen and (max-width: 768px) {
   .project {
-      flex: 0 0 50%;
-      max-width: 100%;
+    width: 75%;
+      }
+}     
+
+ /* Projects are stacked on top of each other at 576px or smaller */
+ @media screen and (max-width: 576px) {
+  .project, {
+    float: none;
+    width: 100%;
       }
 }     
 
 
-
-  /* media query for larger screens */
-@media screen and (max-width: 992px) {
-      .project,nav {
-      width: 75%;
-    
-      }
-  }  
 
 
 
