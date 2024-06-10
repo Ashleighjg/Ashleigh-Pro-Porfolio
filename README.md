@@ -8,12 +8,16 @@
 I was motivated to create this professional portfolio website as a part of career development. This project was built to showcase my proficency at coding and development. I was able to make a responsive website that accomidates mobile devices as well as larger screens. This has allowed me to showcase my best work.
 
 
+Website URL: https://ashleighjg.github.io/Ashleigh-Pro-Porfolio/
+Code source location: https://github.com/Ashleighjg/Ashleigh-Pro-Porfolio/blob/main/index.html
 
 ## Installation
 
 N/A
 
 ## Usage
+
+
 
 ![image of portfolio](C:\Users\ashle\bootcamp\Ashleigh-Portfolio\Images\portfolioscreenshot.JPG)
 
@@ -31,6 +35,8 @@ Samples of my work can also be accessed via my work section that has displayed m
 ## Credits
 
 This webiste can be used by customers or potential customers that have disabilities via assitive technology.
+
+Portions of this code is sourced from https://git.bootcampcontent.com/UNC-Chapel-Hill/UNC-VIRT-FSF-PT-05-2024-U-LOLC/-/tree/main/02-Advanced-CSS/01-Activities/28-Stu_Mini-Project/Main?ref_type=heads  and Xpert Learning Assistant
 
 ## License
 
